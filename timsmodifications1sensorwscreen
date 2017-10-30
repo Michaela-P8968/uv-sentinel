@@ -80,7 +80,8 @@ void loop() {
 
   Serial.println("The loop is running.");
   
-  uvRaw = analogRead(UVSensor1) + analogRead(UVSensor2); //changed analogRead(A0) to analogRead(UVSensor1) and added + analogRead(UVSensor2) but I'm not sure if you can actually do this
+  uvRaw = (analogRead(UVSensor1) + analogRead(UVSensor2))/2; //changed analogRead(A0) to analogRead(UVSensor1) and added + analogRead(UVSensor2) but I'm not sure if you can actually do this
+                                                             //changed analogRead(UVSensor1)+analogRead(UVSensor2) to (analogRead(UVSensor1)+analogRead(UVSensor2))/2 in order to calculate average
   
 
   // the raw sensor value is maped by the Ardiuno onto 1023 bins.  To convert need to remap to 5 volts.
