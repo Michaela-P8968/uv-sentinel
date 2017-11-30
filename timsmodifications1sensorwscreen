@@ -32,8 +32,8 @@ B00000000, B00110000 };
 
 float uvTotal = 0;
 
-int UVSensor1 = A0; //added pin for UV Sensor 1
-int UVSensor2 = A1; //added pin for UV Sensor 2
+int UVSensor1 = A1; //added pin for UV Sensor 1 //changed pin to A1
+int UVSensor2 = A2; //added pin for UV Sensor 2 //changed pin to A2
 
 
 void setup() {
